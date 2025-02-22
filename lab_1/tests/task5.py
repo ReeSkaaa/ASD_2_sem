@@ -31,6 +31,6 @@ total_size = sys.getsizeof(answer)
 for item in answer:
     total_size += sys.getsizeof(item)
 
-print(f"Ответ: {answer[0]}")
+print(f"Ответ: {answer}")
 print(f"Общий размер памти: {total_size} байт")
 print(f"Время выполнения: {execution_time:.6f} секунд")
