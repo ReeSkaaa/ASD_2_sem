@@ -14,9 +14,11 @@ def find_max_prizes(n):
     return k, prizes
 
 
-with open('input.txt', 'r') as file:
+with open('lab_1/tasks/task5/input.txt', 'r') as file:
     n = int(file.read())
     k, prizes = find_max_prizes(n)
-with open('output.txt', 'w') as file:
+with open('lab_1/tasks/task5/output.txt', 'w') as file:
     file.write(f"{k}\n")
+    print(k)
     file.write(f" ".join(map(str, prizes)))
+    print(f" ".join(map(str, prizes)))

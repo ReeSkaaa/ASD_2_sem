@@ -12,7 +12,7 @@ def Knapsack(W, w, p, n):
     return V, A
 
 
-with open('input.txt', 'r') as file:
+with open('lab_1/tasks/task1/input.txt', 'r') as file:
     data = [line.strip() for line in file.readlines()]
     n, W = map(int, data[0].split())
     p, w = [], []
@@ -29,6 +29,6 @@ sorted_p = [item[1] for item in items]
 sorted_w = [item[2] for item in items]
 answer = Knapsack(W, sorted_w, sorted_p, n)
 formatted_answer = f"{answer[0]:.5f}"  # после запятой должно указываться минимум 4 символа
-with open('output.txt', 'w') as file:
-    print(formatted_answer, file=file)
+with open('lab_1/tasks/task1/output.txt', 'w') as file:
+    file.write(formatted_answer)
 print(formatted_answer)

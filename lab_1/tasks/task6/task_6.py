@@ -12,9 +12,10 @@ def LargestNumber(digits):
     return answer
 
 
-with open('input.txt', 'r') as file:
+with open('lab_1/tasks/task6/input.txt', 'r') as file:
     n = int(file.readline().strip())
     digits = list(map(str, file.readline().split()))
 result = LargestNumber(digits)
-with open('output.txt', 'w') as file:
+with open('lab_1/tasks/task6/output.txt', 'w') as file:
     file.write(result)
+    print(result)

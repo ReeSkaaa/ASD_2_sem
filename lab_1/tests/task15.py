@@ -1,6 +1,5 @@
+import sys
 import time
-import tracemalloc
-
 
 def make_valid_brackets(s):
     stack = []
@@ -24,10 +23,19 @@ def make_valid_brackets(s):
     result = ''.join(s[i] for i in sorted(indices_to_keep))
     return result
 
+# Начало отсчета времени
+start_time = time.time()
 
-with open('lab_1/tasks/task15/input.txt', 'r') as file:
-    s = file.readline().strip()
-valid_brackets = make_valid_brackets(s)
-with open('output.txt', 'w') as file:
-    file.write(valid_brackets)
-    print(valid_brackets)
+answer = make_valid_brackets("([)]")
+
+# Конец отсчета времени
+end_time = time.time()
+execution_time = end_time - start_time
+
+total_size = sys.getsizeof(answer)
+for item in answer:
+    total_size += sys.getsizeof(item)
+
+print(f"Ответ: {answer}")
+print(f"Общий размер памти: {total_size} байт")
+print(f"Время выполнения: {execution_time:.6f} секунд")
