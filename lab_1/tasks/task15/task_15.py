@@ -28,6 +28,6 @@ def make_valid_brackets(s):
 with open('lab_1/tasks/task15/input.txt', 'r') as file:
     s = file.readline().strip()
 valid_brackets = make_valid_brackets(s)
-with open('output.txt', 'w') as file:
+with open('lab_1/tasks/task15/output.txt', 'w') as file:
     file.write(valid_brackets)
     print(valid_brackets)
