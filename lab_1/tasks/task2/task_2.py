@@ -3,6 +3,10 @@ def refill_stations(d, m, n, stops):
     num_refills = 0
     current_position = 0
     i = 0
+    # Если расстояние до пункта назначения меньше или равно максимальному расстоянию,
+    # которое можно проехать на одном баке, то заправки не нужны
+    if d <= m:
+        return 0
     while current_position < d: #Пока мы не на месте назначения, выполняется код в цикле
         last_reachable_stop = -1
         while i < len(stops) and stops[i] <= current_position + m: #Ищем самую далекую от
