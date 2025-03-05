@@ -16,12 +16,12 @@ def LargestNumber(digits):
 
 
 # Начало отсчета времени
-start_time = time.time()
+start_time = time.perf_counter()
 
 answer = LargestNumber(['21', '7', '1'])
 
 # Конец отсчета времени
-end_time = time.time()
+end_time = time.perf_counter()
 execution_time = end_time - start_time
 
 total_size = sys.getsizeof(answer)
@@ -30,4 +30,4 @@ for item in answer:
 
 print(f"Ответ: {answer}")
 print(f"Общий размер памти: {total_size} байт")
-print(f"Время выполнения: {execution_time:.6f} секунд")
+print(f"Время выполнения: {execution_time:.8f} секунд")
