@@ -1,6 +1,3 @@
-import time
-import tracemalloc
-
 
 def make_valid_brackets(s):
     stack = []
