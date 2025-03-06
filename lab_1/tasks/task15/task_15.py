@@ -1,4 +1,3 @@
-
 def make_valid_brackets(s):
     stack = []
     indices_to_keep = set()
