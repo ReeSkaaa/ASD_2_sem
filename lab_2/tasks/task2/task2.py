@@ -6,7 +6,7 @@ def find_B(h, n, e):
         mid = (l + r) / 2
         prev = h[0]
         cur = mid
-        aboveGround = cur > 0
+        aboveGround = cur > 0 #выше ли земли лампочка
         for i in range(3, n + 1):
             next_height = 2 * cur - prev + 2  # можно получить из заданной формулы
             if next_height <= 0:
