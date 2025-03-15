@@ -14,7 +14,7 @@ def find_B(n, h):
         aboveGround = cur > 0
         for i in range(3, n + 1):
             next_height = 2 * cur - prev + 2  # можно получить из заданной формулы
-            if next_height < 0:
+            if next_height <= 0:
                 aboveGround = False
             prev = cur
             cur = next_height
