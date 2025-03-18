@@ -40,7 +40,7 @@ def count_scc(n, edges):
         v = order.pop()
         if v not in visited:
             dfs2(v)
-            scc_count += 1  # Найдена новая КСС
+            scc_count += 1 
 
     return scc_count
 
