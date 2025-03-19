@@ -63,7 +63,7 @@ class BST:
 
 
 # Чтение входного файла
-with open("input.txt") as file:
+with open("lab_2/tasks/task5/input.txt") as file:
     lines = file.read().splitlines()
 
 tree, output = BST(), []
@@ -83,5 +83,5 @@ for line in lines:
         output.append(tree.prev(x))
 
 # Запись выходного файла
-with open("output.txt", "w") as file:
+with open("lab_2/tasks/task5/output.txt", "w") as file:
     file.write("\n".join(output))
