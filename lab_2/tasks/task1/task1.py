@@ -18,7 +18,6 @@ def build_tree(node_data):
         if right_index != -1:
             nodes[i].right = nodes[right_index]
 
-        # Узел 0 - корень
         if i == 0:
             root = nodes[0]
 
@@ -60,10 +59,10 @@ with open("lab_2/tasks/task1/input.txt") as f:
     nodes = build_tree(node_data)
     root = nodes[0]
 
-    # Выполнение обходов дерева
-    inorder = inorder_traversal(root)
-    preorder = preorder_traversal(root)
-    postorder = postorder_traversal(root)
+# Выполнение обходов дерева
+inorder = inorder_traversal(root)
+preorder = preorder_traversal(root)
+postorder = postorder_traversal(root)
 
 # Запись выходного файла
 with open("lab_2/tasks/task1/output.txt", "w") as f:
