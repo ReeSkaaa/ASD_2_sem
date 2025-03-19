@@ -12,11 +12,6 @@ def prefix_function(s):
         pi[i] = j  # Записываем значение префиксной функции
     return pi
 
-
-# Тестовые данные
-test_n = 5
-test_edges = [(1, 2), (2, 3), (3, 1), (3, 4), (4, 5)]
-
 # Начало отсчета времени
 start_time = time.perf_counter()
 
