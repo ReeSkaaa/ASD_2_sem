@@ -1,9 +1,6 @@
 import sys
 import time
 
-from lab_2.tasks.task3.task3 import result
-
-
 class Node:
     def __init__(self, value):
         self.value = value
