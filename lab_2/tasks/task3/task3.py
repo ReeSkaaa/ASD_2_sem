@@ -50,5 +50,5 @@ with open('lab_2/tasks/task3/input.txt', 'r') as infile, open('lab_2/tasks/task3
         elif command == '>':
             result = bst.find_min_greater(x)
             outfile.write(str(result) + '\n')
-
+print(str(result))
 

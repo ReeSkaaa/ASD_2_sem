@@ -85,3 +85,4 @@ for line in lines:
 # Запись выходного файла
 with open("lab_2/tasks/task5/output.txt", "w") as file:
     file.write("\n".join(output))
+print("\n".join(output))

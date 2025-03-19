@@ -37,3 +37,4 @@ result = rope_operation(s, queries)
 # Запись выходного файла
 with open("lab_2/tasks/task18/output.txt", "w") as file:
     file.write(result)
+print(result)
