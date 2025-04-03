@@ -12,12 +12,13 @@ def compute_z_function(s):
     return z
 
 # Чтение входных данных
-with open("input.txt", "r") as file:
+with open("lab_4/tasks/task6/input.txt", "r") as file:
     s = file.readline().strip()
 
 # Вычисление Z-функции
 z_values = compute_z_function(s)
 
 # Запись выходных данных
-with open("output.txt", "w") as file:
+with open("lab_4/tasks/task6/output.txt", "w") as file:
     file.write(" ".join(map(str, z_values[1:])))
+    print(" ".join(map(str, z_values[1:])))

@@ -10,8 +10,9 @@ def prefix_function(s):
         pi[i] = j  # Записываем значение префиксной функции
     return pi
 
-with open("input.txt", "r") as f:
+with open("lab_4/tasks/task5/input.txt", "r") as f:
     s = f.readline().strip()
     result = prefix_function(s)
-with open("output.txt", "w") as f:
+with open("lab_4/tasks/task5/output.txt", "w") as f:
     f.write(" ".join(map(str, result)))
+    print(" ".join(map(str, result)))
