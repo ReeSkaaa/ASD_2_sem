@@ -46,7 +46,7 @@ def count_scc(n, edges):
 
 # Тестовые данные
 test_n = 5
-test_edges = [(1, 2), (2, 3), (3, 1), (3, 4), (4, 5)]
+test_edges = [(2, 1), (3, 2), (3, 1), (4, 3), (4, 1), (5, 2), (5, 3)]
 
 # Начало отсчета времени
 start_time = time.perf_counter()

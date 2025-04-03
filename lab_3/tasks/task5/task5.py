@@ -45,7 +45,7 @@ def count_scc(n, edges):
     return scc_count
 
 # Читаем входные данные
-with open("input.txt") as file:
+with open("lab_3/tasks/task5/input.txt") as file:
     n, m = map(int, file.readline().split())
     edges = [tuple(map(int, line.split())) for line in file]
 
@@ -53,5 +53,6 @@ with open("input.txt") as file:
 result = count_scc(n, edges)
 
 # Записываем результат в output.txt
-with open("output.txt", "w") as file:
-    file.write(str(result) + "\n")
+with open("lab_3/tasks/task5/output.txt", "w") as file:
+    file.write(str(result))
+    print(str(result))

@@ -28,9 +28,10 @@ def find_connected_component(n, edges):
     return count
 
 
-with open("input.txt", "r") as f:
+with open("lab_3/tasks/task2/input.txt", "r") as f:
     n, m = map(int, f.readline().split())
     edges = [tuple(map(int, f.readline().split())) for i in range(m)]
     count = find_connected_component(n, edges)
-with open("output.txt", "w") as f:
+with open("lab_3/tasks/task2/output.txt", "w") as f:
     f.write(str(count))
+    print(str(count))
